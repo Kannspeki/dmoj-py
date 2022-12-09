@@ -1,32 +1,6 @@
 import math, sys
 
 
-def wc(s):
-    counter = 0 
-    space = 0
-    word = 0
-    pont = ['.', ';', '-', '—', '?',' ']
-
-    word=s.count(' ')      
-
-    print(word+1)
-
-#wc('aa aa aa')
-#wc('aa aa')
-
-
-def volcone():
-    r, h = 0,0
-    while r > 100 or r < 1: 
-        r = int(input('radius: '))
-    while h > 100 or h < 1: 
-        h = int(input('height: '))
-
-    print ((math.pi * (r ** 2) * h) / 3)
-
-#volcone()    
-
-
 def wc16c1j1():
     s = int(input())
     print('sp' + 'o'*s + 'ky')
@@ -48,7 +22,6 @@ def ccc13j1():
     print((m - y) + m)
 
 #ccc13j1()    
-
 
 def wc17c1j2():
     f = float(sys.stdin.readline())
@@ -137,4 +110,45 @@ def ccc06j1():
         calories += 75   
     print(f'Your total Calorie count is {calories}.')
 
-ccc06j1()
+#ccc06j1()
+
+
+def ccc15j1():
+    month = int(sys.stdin.readline())
+    day = int(sys.stdin.readline())
+    if month == 2 and day == 18:
+        print('Special')
+   
+    elif month == 2:
+        if day < 18:
+            print('Before')
+        if day > 18:    
+            print('After')
+        
+    elif month > 2:
+        print('After')
+    elif month < 2:
+        print('Before')
+
+#ccc15j1()
+
+
+def ccc15j2():
+    usrInput = (sys.stdin.readline())
+    sadNum = usrInput.count(':-(')
+    hapNum = usrInput.count(':-)')
+
+    if sadNum > hapNum:
+        print('sad')
+    elif hapNum > sadNum:
+        print('happy')
+    elif hapNum == 0 or sadNum == 0:
+        print('none')
+    elif hapNum == sadNum and hapNum > 0 and sadNum > 0:    
+        print('unsure')
+
+ccc15j2()
+
+
+
+
