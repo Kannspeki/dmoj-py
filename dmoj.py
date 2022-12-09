@@ -147,8 +147,25 @@ def ccc15j2():
     elif hapNum == sadNum and hapNum > 0 and sadNum > 0:    
         print('unsure')
 
-ccc15j2()
+#ccc15j2()
 
+
+def dmopc16c1p0():
+
+    width = int(sys.stdin.readline())
+    cheese = int(sys.stdin.readline())
+
+    if width == 3 and cheese >= 95:
+        print('C.C. is absolutely satisfied with her pizza.')
+        sys.exit()
+
+    if width == 1 and cheese < 51:
+        print('C.C. is fairly satisfied with her pizza.')
+        sys.exit()
+    else:
+        print('C.C. is very satisfied with her pizza.')
+        sys.exit()
+dmopc16c1p0()
 
 
 
