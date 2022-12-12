@@ -165,7 +165,25 @@ def dmopc16c1p0():
     else:
         print('C.C. is very satisfied with her pizza.')
         sys.exit()
-dmopc16c1p0()
+#dmopc16c1p0()
 
+
+def ccc07j1():
+    middle = [0]
+    bowl1 = int(sys.stdin.readline())
+    middle.append(bowl1)
+
+    bowl2 = int(sys.stdin.readline())
+    middle.append(bowl2)
+
+    bowl3 = int(sys.stdin.readline())
+    middle.append(bowl3)
+
+    middle.sort()
+    median = round((3 + 1)/2) 
+    print(middle[median])
+
+
+#ccc07j1()
 
 
