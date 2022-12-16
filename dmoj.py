@@ -187,3 +187,41 @@ def ccc07j1():
 #ccc07j1()
 
 
+
+def ccc18j2():
+     numlots = int(sys.stdin.readline())
+     day1 = sys.stdin.readline()
+
+     day2 = sys.stdin.readline()
+        
+     counter = 0
+     dayI = []
+     dayII = []
+
+     for i in range (numlots):
+        dayI.append(day1[i]) 
+        dayII.append(day2[i])
+        if dayI[i] != '.' and dayII[i] != '.':
+            if dayI[i] == dayI[i]:
+                counter +=1
+     print(counter)
+
+
+# if day1[i] == 'C' and day2[i] == 'C':
+#ccc18j2()
+
+
+def coci16c1p1():
+    x = int(sys.stdin.readline())
+    m = int(sys.stdin.readline())
+
+    n = []
+    data = 0
+
+    for i in range(m):
+        n.append(int(sys.stdin.readline()))
+        data = data + x  - n[i]
+    print(data + x)
+
+#coci16c1p1()
+
